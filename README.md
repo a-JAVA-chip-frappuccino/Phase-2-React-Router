@@ -1,1 +1,3 @@
-# Phase-2-React-Router
+# REACT ROUTER LECTURE
+
+Run `npm install` and `npm start` to get started!
