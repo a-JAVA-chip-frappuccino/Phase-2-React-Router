@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./Header"
@@ -10,7 +10,17 @@ import Producers from "./Producers";
 import Movies from "./Movies";
 import Movie from "./Movie";
 
+import PD_FETCH from "./PD_FETCH";
+
 function App() {
+
+    const [animals, setAnimals] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3000/animals")
+            .then((resp) => resp.json())
+            .then((data) => setAnimals(data))
+    }, [])
 
     const favoriteProducer = "Jane Smith";
 
@@ -20,7 +30,7 @@ function App() {
 
     return (
             <Routes>
-                <Route path = '/' element = { <Home /> } />
+                <Route path = '/' element = { <PD_FETCH animals = { animals } /> } />
                 <Route path = '/actors'>
                     <Route index element = { <Actors actorArr = { actorArr } /> } />
                     <Route exact path = '1' element = { <Actor /> } />
