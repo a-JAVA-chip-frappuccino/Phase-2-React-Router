@@ -1,24 +1,19 @@
 {
-    "animals": [
-      {
-        "id": 1,
-        "species": "Koala",
-        "name": "Bob"
-      },
-      {
-        "id": 2,
-        "species": "Hippo",
-        "name": "Charlie"
-      },
-      {
-        "species": "Chupacabra",
-        "name": "Pablo",
-        "id": 3
-      },
-      {
-        "species": "Dog",
-        "name": "Coconut",
-        "id": 4
-      }
-    ]
-  }
+  "animals": [
+    {
+      "id": 2,
+      "species": "Hippo",
+      "name": "Fiona"
+    },
+    {
+      "species": "Chupacabra",
+      "name": "Martha",
+      "id": 3
+    },
+    {
+      "species": "Dog",
+      "name": "Coconut",
+      "id": 4
+    }
+  ]
+}

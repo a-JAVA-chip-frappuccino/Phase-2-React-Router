@@ -3,7 +3,11 @@ import EachPD from "./EachPD";
 
 function PD_FETCH( { animals, setAnimals } ) {
 
-    const [newName, setNewName] = useState("")
+    function handleDelete() {
+        }
+
+        function handlePatch() {
+        }
 
     const mappedAnimals = animals.map((animal) => (
         <EachPD
@@ -11,26 +15,16 @@ function PD_FETCH( { animals, setAnimals } ) {
             id = {animal.id}
             species = {animal.species}
             name = {animal.name}
-            newName = {newName}
+            handlePatch = {handlePatch}
+            handleDelete = {handleDelete}
         />
     ))
-
-    function handlePatch(e) {
-        e.preventDefault();
-        setNewName(e.target.name.value);
-    }
 
     return (
         <>
             <ul>
                 {mappedAnimals}
             </ul>
-
-            PATCH:
-            <form onSubmit = {handlePatch} >
-                Name: <input type = 'text' name = 'name' />
-                <input type = 'submit' value = 'Submit' />
-            </form>
         </>
     );
 }
