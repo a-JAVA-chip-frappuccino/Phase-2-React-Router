@@ -36,7 +36,7 @@ function App() {
                     <Route exact path = '1' element = { <Actor /> } />
                     <Route exact path = '2' element = { <Actor2 /> } />
                 </Route>
-                <Route path = '/producers' element = { <Producers favoriteProducer = { favoriteProducer} /> } />
+                <Route path = '/producers' element = { <Producers favoriteProducer = { favoriteProducer } /> } />
                 <Route path = '/movies' element = { <Movies /> } />
                 <Route path = '/movies/1' element = { <Movie /> } />
                 <Route path = '/movies'>

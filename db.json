@@ -2,18 +2,13 @@
   "animals": [
     {
       "id": 2,
-      "species": "Hippo",
-      "name": "Fiona"
+      "species": "Capybara",
+      "name": "Kurty Kurt"
     },
     {
-      "species": "Chupacabra",
-      "name": "Martha",
+      "species": "Monkey",
+      "name": "Way of Ramen",
       "id": 3
-    },
-    {
-      "species": "Dog",
-      "name": "Coconut",
-      "id": 4
     }
   ]
 }
