@@ -30,7 +30,7 @@ function App() {
 
     return (
             <Routes>
-                <Route path = '/' element = { <PD_FETCH animals = { animals } /> } />
+                <Route path = '/' element = { <PD_FETCH animals = { animals } setAnimals = { setAnimals } /> } />
                 <Route path = '/actors'>
                     <Route index element = { <Actors actorArr = { actorArr } /> } />
                     <Route exact path = '1' element = { <Actor /> } />
